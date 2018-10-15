@@ -1,0 +1,49 @@
+.container {
+	width: 1000px;
+	padding: 0;
+}
+
+.topnav {
+	list-style: none;
+	display: flex;
+	margin-top: 20px;
+}
+
+.topnav li {
+	margin-left: 30px;
+}
+
+.topnav li a {
+	color: #4f2530;
+	font-weight: bold;
+	font-size: 26px;
+	text-decoration: none;
+}
+
+.creator_info {
+	color: #3e0766;
+	font-style: italic;
+	font-weight: bold;
+}
+
+footer {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.hotel_bs {
+	margin-top: 20px;
+}
+
+.date_bs {
+	background: #f2e89b;
+	border-radius: 3px;
+	width: 150px;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Times New Roman', sans-serif;
+	font-weight: bold;
+	margin-top: 7px;
+}
+
+
