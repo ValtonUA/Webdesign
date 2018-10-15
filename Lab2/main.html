@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slideshow</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="page enter">
+			<img src="img/cinema.jpg" alt="">
+			<div class="button" onclick="to_choose_theme()">Enter</div>
+			<!-- <a href="slideshow.html" class="button">Enter</a> -->
+		</div>
+		<!-- enter -->
+		<div class="page choose_theme">
+			<h1>Choose a category</h1>
+			<ul class="themes">
+				<li class="picture" onclick="is_cars()">
+					<img src="img/cars/car3.jpg" alt="autos">
+					<p>Cars</p>
+				</li>
+				<li class="picture" onclick="is_sceneries()">
+					<img src="img/sceneries/scenery1.jpg" alt="sceneries">
+					<p>Sceneries</p>
+				</li>
+				<li class="picture" onclick="is_buildings()">
+					<img src="img/buildings/building1.jpg" alt="buildings">
+					<p>Buildings</p>
+				</li>
+			</ul>
+		</div>
+		<!-- choose_theme -->
+		<div class="page choose_settings">
+			<div class="picture_size">
+				<h1>Choose a size of pictures</h1>
+				<ul class="menu_size">
+					<li>
+						<p class="L" onclick="is_large()">Large</p>
+					</li>
+					<li>
+						<p class="M" onclick="is_medium()">Medium</p>
+					</li>
+					<li>
+						<p class="S" onclick="is_small()">Small</p>
+					</li>
+				</ul>
+			</div>
+			<!-- picture_size -->
+			<div class="browse_method">
+				<h1>Choose a browse method</h1>
+				<ul class="menu_method">
+					<li class="onclick" onclick="is_onclick()">
+						<img src="img/onclick.png" alt="">
+					</li>
+					<li class="timer" onclick="is_timer()">
+						<img src="img/timer.png" alt="">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- choose_settings -->
+		<div class="page slideshow">
+			<img class="slide" src="#" alt="#"></img>
+			<div class="to_ left" onclick="prev()"></div>
+			<div class="to_ right" onclick="next()"></div>
+		</div>
+		<!-- slideshow -->
+	</div> 
+	<!-- container -->
+	<script type="text/javascript" src ="main.js"></script>
+</body>
+</html>

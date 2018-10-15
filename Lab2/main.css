@@ -1,0 +1,173 @@
+body {
+	background: white;
+	transition: all 1s;
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 8vh;
+	background: white;
+	width: 50%; 
+	border-radius: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	font-size: 5vh;
+	transition: background 0.5s;
+	background: white;
+}
+
+p:hover{
+	transition: background 0.5s;
+	background: #89dfff;
+}
+
+.container {
+	/*border: 2px solid red;*/
+	margin: auto;
+	display: flex;
+  	height: 97vh; 
+  	width: 97vw;
+  	overflow: hidden;
+}
+.page {
+	/*border: 2px solid black;*/
+	height: 100%;
+  	width: 100%;
+  	margin: 0 auto;
+  	padding: 0;
+  	display: none;
+	opacity: 0;
+	text-align: center;
+	transition: all 1.5s;
+}
+.enter img {
+	display: flex;
+	/*border: 2px solid black;*/
+	max-height: 100%;
+	max-width: 100%;
+	position: relative;
+	left: -100vw;
+	margin: auto;
+}
+
+.button {
+	transform: scale(0);
+	display: inline-block;
+	position: absolute;
+	left: 43%;
+	bottom: 18.5%;
+	background: yellow;
+	border-radius: 15px;
+}
+
+.themes {
+	/*border: 2px solid red;*/
+	height: 70%;
+	width: 100%;
+	list-style: none;
+}
+
+.picture {
+	height: 85%;
+	width: 30%;
+	float: left;
+	margin-left: 1%;
+	margin-top: 5vh;
+}
+
+.picture p {
+	border: 2px solid black;
+	margin-bottom: auto;
+}
+
+.picture img {
+	border: 2px solid black;
+	width: 100%;
+}
+
+.picture:hover p {
+	transition: background 0.5s;
+	background: #89dfff;
+}
+
+.picture_size {
+	height: 25vh;
+	width: 100%;
+}
+
+.picture_size ul {
+	justify-content: space-around;
+	height: 6vh;
+	width: 60%;
+	margin: auto;
+	padding: 0;
+	border: 2px solid black;
+	background: white;
+}
+
+.picture_size li {
+	/*border: 1px solid black;*/
+	list-style: none;
+}
+
+.picture_size p {
+	margin: 0;
+}
+
+.browse_method {
+	height: 75%;
+	width: 100%;
+}
+
+.browse_method ul {
+	justify-content: space-around;
+	height: 60%;
+	width: 80%;
+	margin: auto;
+	padding: 0;
+}
+
+.browse_method li {
+	border: 2px solid black;
+	height: 100%;
+	width: 35%;
+	transition: background 0.5s;
+	background-color: white;
+	list-style: none;
+}
+
+.browse_method li:hover {
+	background-color: yellow;
+}
+
+.browse_method img {
+	padding: 7%;
+	height: 80%;
+	width: 80%;
+}
+
+.slide {
+	margin: 0 auto;
+	background-color: none;
+}
+
+.to_ {
+	transition: all 0;
+	transform: scale(0);
+	position: absolute;
+	height: 100%;
+	width: 10%;
+	top: 0;
+	background: white;
+}
+
+.left {
+	left: 0;
+}
+
+.right {
+	right: 0;
+}
