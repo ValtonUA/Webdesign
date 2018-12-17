@@ -1,0 +1,33 @@
+<div class="header">
+	<% if (loggedEmail == "") { %>
+		<h1> Hello, guest </h1>
+		<ul>
+			<li><a href="/">Main</a></li>
+			<li><a href="login">Received</a></li>
+			<li><a href="login">Sent</a></li>
+		</ul>
+	<% } else { %>
+		<div class="dropdown">
+		  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    <% if (loggedEmail.length > 25) { %>
+				Hello, <%= loggedEmail.substring(0, 26) + "..." %> 
+			<% } else { %>
+				Hello, <%= loggedEmail %> 
+			<% } %>
+		  </button>
+		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		    <a class="dropdown-item" href="passChange">Change a password</a>
+		    <form action="/logout" method="post">
+		    	<button class="dropdown-item" type="submit">Log out</button>
+		    </form>
+		  </div>
+		</div>
+		<ul>
+			<li><a href="/">Main</a></li>
+			<li><a href="/received">Received</a></li>
+			<li><a href="/sent">Sent</a></li>
+			<li><a href="/compose">Compose</a></li>
+		</ul>
+	<% } %>
+</div>
+
